@@ -78,7 +78,10 @@ final_results = final_results.sort_values(['pts_final'], ascending=False)
 
 # Add pg rows for analysis
 for col in ('Goals', 'PenaltyGoals', 'Assists', 'Yellow', 'Red'):
-    final_results[col + '_pg'] = final_results[col] / final_results['matches']
+    if col == 'Goals':
+        final_results[col + '_pg'] = (final_results[col] - final_results['PenaltyGoals']) / final_results['matches']
+    else:
+        final_results[col + '_pg'] = final_results[col] / final_results['matches']
 
 # Push final_results column to the back
 column_list = final_results.columns.tolist()
