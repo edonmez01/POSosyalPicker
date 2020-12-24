@@ -1,5 +1,4 @@
-PROBLEM:
-- The situation of two Yusuf Erdogans when either Kasimpasa of Karagumruk doesn't play
+PROBLEMS:
 
 IMPROVEMENT:
 - Use SQL for the database?
