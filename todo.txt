@@ -1,0 +1,6 @@
+PROBLEM:
+- The situation of two Yusuf Erdogans when either Kasimpasa of Karagumruk doesn't play
+
+IMPROVEMENT:
+- Use SQL for the database?
+- try to make the html table more fabulous?
