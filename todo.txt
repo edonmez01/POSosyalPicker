@@ -1,5 +1,4 @@
 PROBLEMS:
 
 IMPROVEMENT:
-- Use SQL for the database?
 - try to make the html table more fabulous?
