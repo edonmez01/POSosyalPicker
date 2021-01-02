@@ -19,7 +19,7 @@ for df in (gk_data, d_data, m_data, st_data):
     df['pts_final'] = 0
     df['matches'] = df['Mins'] / 90
     df['clean_sheet_prob'] = 1 / (df['CPrediction'] + 1)
-    df['goal_multiplier'] = [math.log(i + 1.1, 2.5) for i in df['SPrediction']]
+    df['goal_multiplier'] = [1.1 * math.log(i + 1, 2.5) for i in df['SPrediction']]
     df['win_prob'] = [2 / (1 + math.exp(c - s)) - 1 for c, s in zip(df['CPrediction'], df['SPrediction'])]
     df['pts_final'] -= df['Yellow'] / df['matches']
     df['pts_final'] -= 4 * (df['Red'] / df['matches'])
