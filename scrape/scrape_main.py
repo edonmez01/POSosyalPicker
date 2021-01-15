@@ -7,6 +7,14 @@ teams = database.teams
 
 # Position data from POSosyal directly
 positions = database.positions
+# check = []
+# for i in positions:
+#     if isinstance(positions[i], str):
+#         if positions[i] in ('gk', 'd', 'm', 'st'):
+#             check.append(i)
+#     else:
+#         if positions[i][0] in ('gk', 'd', 'm', 'st'):
+#             check.append(i)
 
 gk_data = {}
 d_data = {}
@@ -33,6 +41,8 @@ for team in teams.items():
 
     for x in source:
         player = x.find('a', attrs={'class': 'p0c-team-squad__player-name'}).text.strip()
+        # if player in check:
+        #     check.remove(player)
         if player == 'Yusuf Erdoğan':  # Because there are 2 different Yusuf Erdogans in the league, the name of the player's team is appended to the string.
             if karagumrukBye and kasimpasaBye:
                 print('Yusuf Erdogan error')
@@ -91,3 +101,4 @@ for team in teams.items():
 # Print how many players are found to make sure that all 220 players are listed.
 print()
 print(f'{playerCount} players listed.')
+# print(check)
