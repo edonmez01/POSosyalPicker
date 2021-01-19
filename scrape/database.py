@@ -1,9 +1,9 @@
 teams = {
-    'https://www.mackolik.com/takim/alanyaspor/kadro/84fpe0iynjdghwysyo5tizdkk/s%C3%BCper-lig/2020-2021/': (None, None),  # Alanya
-    'https://www.mackolik.com/takim/sivasspor/kadro/f432akygffyamal3h6poig65t/s%C3%BCper-lig/2020-2021/': (None, None),  # Sivas
+    'https://www.mackolik.com/takim/alanyaspor/kadro/84fpe0iynjdghwysyo5tizdkk/s%C3%BCper-lig/2020-2021/': (1, 1),  # Alanya
+    'https://www.mackolik.com/takim/sivasspor/kadro/f432akygffyamal3h6poig65t/s%C3%BCper-lig/2020-2021/': (2, 1),  # Sivas
     'https://www.mackolik.com/takim/karag%C3%BCmr%C3%BCk/kadro/c3txoz57mu7w9y1jprvnv2flr/s%C3%BCper-lig/2020-2021/': (1, 2),  # Karagumruk
     'https://www.mackolik.com/takim/gen%C3%A7lerbirli%C4%9Fi/kadro/embqktr41hfzczc8uav1scmcn/s%C3%BCper-lig/2020-2021/': (1, 2),  # Gencler
-    'https://www.mackolik.com/takim/fenerbah%C3%A7e/kadro/8lroq0cbhdxj8124qtxwrhvmm/s%C3%BCper-lig/2020-2021/': (None, None),  # Fenerbahce
+    'https://www.mackolik.com/takim/fenerbah%C3%A7e/kadro/8lroq0cbhdxj8124qtxwrhvmm/s%C3%BCper-lig/2020-2021/': (1, 2),  # Fenerbahce
     'https://www.mackolik.com/takim/denizlispor/kadro/atzw1r6gsxsegd0omo1f0yxkl/s%C3%BCper-lig/2020-2021/': (1, 4),  # Denizli
     'https://www.mackolik.com/takim/gaziantep-fk/kadro/2agzb2h4ppg7lfz9hn7eg1rqo/s%C3%BCper-lig/2020-2021/': (2, 0),  # Gaziantep
     'https://www.mackolik.com/takim/be%C5%9Fikta%C5%9F/kadro/2ez9cvam9lp9jyhng3eh3znb4/s%C3%BCper-lig/2020-2021/': (2, 1),  # Besiktas
@@ -11,12 +11,12 @@ teams = {
     'https://www.mackolik.com/takim/hatayspor/kadro/efy1nhpn5l6hc27znhsptegba/s%C3%BCper-lig/2020-2021/': (3, 1),  # Hatay
     'https://www.mackolik.com/takim/%C3%A7aykur-rizespor/kadro/1lbrlj3uu8wi2h9j79snuoae4/s%C3%BCper-lig/2020-2021/': (0, 2),  # Rize
     'https://www.mackolik.com/takim/g%C3%B6ztepe/kadro/cjbaf8s09qoa1n11r33gc560x/s%C3%BCper-lig/2020-2021/': (2, 1),  # Goztepe
-    'https://www.mackolik.com/takim/mke-ankarag%C3%BCc%C3%BC/kadro/a7jkz1m32wntcvegrwjbr85t5/s%C3%BCper-lig/2020-2021/': (None, None),  # Ankara
+    'https://www.mackolik.com/takim/mke-ankarag%C3%BCc%C3%BC/kadro/a7jkz1m32wntcvegrwjbr85t5/s%C3%BCper-lig/2020-2021/': (2, 1),  # Ankara
     'https://www.mackolik.com/takim/konyaspor/kadro/cw4lbdzlqqdvbkdkz00c9ye49/s%C3%BCper-lig/2020-2021/': (1, 3),  # Konya
-    'https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtrbgrg7p5x7bwf/s%C3%BCper-lig/2020-2021/': (None, None),  # Kasimpasa
+    'https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtrbgrg7p5x7bwf/s%C3%BCper-lig/2020-2021/': (1, 2),  # Kasimpasa
     'https://www.mackolik.com/takim/antalyaspor/kadro/9irsyv431fpuqhqtfq9iwxf2u/s%C3%BCper-lig/2020-2021/': (None, None),  # Antalya
     'https://www.mackolik.com/takim/trabzonspor/kadro/2yab38jdfl0gk2tei1mq40o06/s%C3%BCper-lig/2020-2021/': (3, 1),  # Trabzon
-    'https://www.mackolik.com/takim/bb-erzurumspor/kadro/ea2gyhkv6vwmxbxevdb4u3796/s%C3%BCper-lig/2020-2021/': (None, None),  # Erzurum
+    'https://www.mackolik.com/takim/bb-erzurumspor/kadro/ea2gyhkv6vwmxbxevdb4u3796/s%C3%BCper-lig/2020-2021/': (1, 1),  # Erzurum
     'https://www.mackolik.com/takim/galatasaray/kadro/esa748l653sss1wurz5ps3228/s%C3%BCper-lig/2020-2021/': (4, 1),  # Galatasaray
     'https://www.mackolik.com/takim/kayserispor/kadro/c8ns6z3u8kxldv1zh1evu10rv/s%C3%BCper-lig/2020-2021/': (1, 1),  # Kayseri
     'https://www.mackolik.com/takim/yeni-malatyaspor/kadro/du1e3xdbp2q5z7jy31o0vt6t6/s%C3%BCper-lig/2020-2021/': (1, 3)  # Malatya
@@ -32,16 +32,16 @@ positions = {
     'Steven Caulker': 'd',
     'Alpay Çelebi': '-',
     'Ahmet Gülay': '-',
-    'Fatih Aksoy': 'd',
+    'Fatih Aksoy': '-',
     'Jacques François Moubandje': 'd',
-    'Georgios Tzavellas': '-',
-    'Ceyhun Gülselam': '-',
+    'Georgios Tzavellas': 'd',
+    'Ceyhun Gülselam': 'm',
     'Tayfur Bingöl': '-',
     'Alperen Soysal': '-',
     'Umut Güneş': '-',
     'Yusuf Özdemir': '-',
     'Kazım Yakmaz': '-',
-    'Emmanouil Siopis': 'm',
+    'Emmanouil Siopis': '-',
     'Ümit Türker': '-',
     'Fırat Çakıroğlu': '-',
     'Berkan İsmail Kutlu': 'm',
@@ -49,15 +49,15 @@ positions = {
     'Salih Uçan': '-',
     'Efkan Bekiroglu': '-',
     'Hasan Ayaroğlu': '-',
-    'Davidson da Luz Pereira': '-',
-    'Khouma El Hadji Babacar': ('st', 1),
+    'Davidson da Luz Pereira': 'm',
+    'Khouma El Hadji Babacar': ('-', 1),
     'Anastasios Bakasetas': ('m', 3),
     'Adam Fernando Bareiro Gamarra': 'st',
     'Mustafa Pektemek': '-',
 
     # SIVASSPOR
-    'Mamadou Samassa': 'gk',
-    'Ali Şaşal Vural': '-',
+    'Mamadou Samassa': '-',
+    'Ali Şaşal Vural': 'gk',
     'Baver Kuçkar': '-',
     'Muammer Yıldırım': '-',
     'Ziya Erdal': '-',
@@ -110,7 +110,6 @@ positions = {
     'Lucas Rodrigo Biglia': ('m', 2),
     'Muhammed Egemen Pehlivan': '-',
     'Aksel Aktaş': '-',
-    'Aatif Chahechouhe': '-',
     'Alassane Ndao': 'm',
     'Jimmy Durmaz': '-',
     'Ramazan Civelek': '-',
@@ -161,22 +160,22 @@ positions = {
     'Harun Tekin': '-',
     'Oytun Özdoğan': '-',
     'Marcel Tisserand': 'd',
-    'Sadık Çiftpınar': 'd',
+    'Sadık Çiftpınar': '-',
     'Mikael Askarov': '-',
-    'Serdar Aziz': '-',
+    'Serdar Aziz': 'd',
     'Gökhan Gönül': '-',
     'Gürkan Başkan': '-',
     'Nazim Sangare': 'd',
-    'Filip Novák': '-',
-    'Mauricio Lemos Merladet': 'd',
-    'Caner Erkin': '-',
+    'Filip Novák': 'd',
+    'Mauricio Lemos Merladet': '-',
+    'Caner Erkin': 'd',
     'Ferdi Kadıoğlu': '-',
     'Arda Guler': '-',
     'Ömer Faruk Beyaz': '-',
     'Uğur Kaan Yıldız': '-',
     'Nabil Dirar': '-',
     'Serhat Ahmetoğlu': '-',
-    'Ozan Tufan': ('m', 1),
+    'Ozan Tufan': ('-', 1),
     'Dimitris Pelkas': 'm',
     'Diego Perotti': ('-', 2),
     'Fatih Mert Çırtlık': '-',
@@ -184,11 +183,12 @@ positions = {
     'José Sosa': ('-', 2),
     'Eyüp Akcan': '-',
     'Luiz Gustavo Dias': 'm',
+    'İsmail Yüksek': '-',
     'Mert Hakan Yandaş': '-',
     'Gülhan Üreyen': '-',
     'Enner Remberto Valencia Lastra': 'st',
-    'Mbwana Ally Samatta': '-',
-    'Sinan Gümüş': 'm',
+    'Mbwana Ally Samatta': 'st',
+    'Sinan Gümüş': '-',
     'Mame Thiam': 'm',
     'Kemal Ademi': '-',
     'Papiss Cissé': '-',
@@ -439,13 +439,13 @@ positions = {
     'Idriz Naser Voca': '-',
     'Zvonimir Šarlija': 'd',
     'Stelios Kitsiou': '-',
-    'Erdi Dikmen': 'd',
-    'Tiago Pinto': '-',
-    'Cebrail Karayel': 'd',
+    'Erdi Dikmen': '-',
+    'Tiago Pinto': 'd',
+    'Cebrail Karayel': '-',
     'Murat Sipahioğlu': '-',
     'Anıl Dikmen': '-',
     'Ante Kulusic': '-',
-    'Michał Pazdan': '-',
+    'Michał Pazdan': 'd',
     'Atakan Rıdvan Çankaya': 'd',
     'Endri Çekiçi': 'm',
     'Luka Adžić': '-',
@@ -457,8 +457,8 @@ positions = {
     'Saba Lobzhanidze': 'm',
     'Alper Potuk': '-',
     'Assane Dioussé El Hadji': '-',
-    'Joseph Martin Paintsil': ('-', 1),
-    'Torgeir Børven': ('st', 1),
+    'Joseph Martin Paintsil': ('m', 1),
+    'Torgeir Børven': ('-', 1),
     'Emre Güral': ('-', 1),
     'Mücahit Can Akçay': '-',
     'Jonathan Bolingi Mpangi Merikani': 'st',
@@ -506,14 +506,14 @@ positions = {
     'Erdem Canpolat': '-',
     'Mehmet Enes Sarı': '-',
     'Ertuğrul Taşkıran': '-',
-    'Oussama Haddadi': '-',
+    'Oussama Haddadi': 'd',
     'Mickaël Tirpan': '-',
     'Tomáš Břečka': 'd',
     'Julian Jeanvier': '-',
     'Ahmet Oğuz': '-',
-    'Evren Eren Elmalı': 'd',
+    'Evren Eren Elmalı': '-',
     'Florent Hadërgjonaj': 'd',
-    'Derrick Luckassen': 'd',
+    'Derrick Luckassen': '-',
     'Mehmet Feyzi Yıldırım': '-',
     'Çağtay Kurukalıp': '-',
     'Dogucan Haspolat': '-',
@@ -613,23 +613,25 @@ positions = {
     'Hasan Hatipoğlu': '-',
     'Adolphe Teikeu Kamgang': 'd',
     'Fırat Şaşi': '-',
-    'Arturo Mina': 'd',
+    'Arturo Mina': '-',
     'Cenk Ahmet Alkılıç': 'd',
+    'Manuel Marouan da Costa Trinidade': 'd',
     'Gökhan Kardeş': '-',
     'Kaan Kanak': '-',
     'Jugurtha Hamroun': '-',
     'Ibrahim Sissoko': '-',
-    'Petrus Boumal Mayega': '-',
+    'Petrus Boumal Mayega': 'm',
     'Yusuf Koç': '-',
-    'Arvydas Novikovas': ('m', 2),
+    'Arvydas Novikovas': ('-', 2),
     'Emrah Başsan': ('m', 1),
     'İbrahim Akdağ': '-',
     'Osman Çelik': '-',
-    'Murat Uçar': '-',
-    'Mitchell Glenn Donald': 'm',
+    'Murat Uçar': 'd',
+    'Mitchell Glenn Donald': '-',
     'Gabriel Obertan': '-',
     'Johanna Ochieng Omolo': 'm',
-    'Brahim Darri': 'm',
+    'Brahim Darri': '-',
+    'Aatif Chahechouhe': 'm',
     'Serdar Yıldırım': '-',
     'Ömer Hasan Şişmanoğlu': '-',
     'Ricardo Jorge Pires Gomes': 'st',

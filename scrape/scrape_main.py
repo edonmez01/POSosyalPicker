@@ -31,6 +31,7 @@ if teams['https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtr
 
 yusuferdogan = ' KARAGUMRUK'
 for team in teams.items():
+    teamCount = 0
     link = team[0]
     sp, cp = team[1]
     r = requests.get(link)
@@ -41,6 +42,8 @@ for team in teams.items():
 
     for x in source:
         player = x.find('a', attrs={'class': 'p0c-team-squad__player-name'}).text.strip()
+        if link == 'https://www.mackolik.com/takim/karag%C3%BCmr%C3%BCk/kadro/c3txoz57mu7w9y1jprvnv2flr/s%C3%BCper-lig/2020-2021/' and player == 'Aatif Chahechouhe':
+            continue
         # if player in check:
         #     check.remove(player)
         if player == 'Yusuf Erdoğan':  # Because there are 2 different Yusuf Erdogans in the league, the name of the player's team is appended to the string.
@@ -64,7 +67,7 @@ for team in teams.items():
                 pos, penaltyGoals = positions[player]
 
         except KeyError:
-            print('Player not found: ' + player)
+            # print('Player not found: ' + player)
             continue
 
         if pos == '-':  # If the player isn't in the predicted lineup
@@ -97,6 +100,10 @@ for team in teams.items():
                 data[player].append(int(i))
 
         playerCount += 1
+        teamCount += 1
+
+    if teamCount != 11:
+        print(f'Warning: {teamCount} players in {link}')
 
 # Print how many players are found to make sure that all 220 players are listed.
 print()
