@@ -115,7 +115,7 @@ positions = {
     'Ramazan Civelek': '-',
     'Yusuf Erdoğan KARAGUMRUK': '-',
     'Erik Sabo': ('-', 2),
-    'Fabio Borini': 'm',
+    'Fabio Borini': ('m', 1),
     'Andrea Bertolacci': 'm',
     'Efe Tatlı': '-',
     'Vato Arveladze': '-',
@@ -186,7 +186,7 @@ positions = {
     'İsmail Yüksek': '-',
     'Mert Hakan Yandaş': '-',
     'Gülhan Üreyen': '-',
-    'Enner Remberto Valencia Lastra': 'st',
+    'Enner Remberto Valencia Lastra': ('st', 1),
     'Mbwana Ally Samatta': 'st',
     'Sinan Gümüş': '-',
     'Mame Thiam': 'm',
@@ -392,10 +392,10 @@ positions = {
     'Onur Bulut': 'm',
     'Aminu Umar': '-',
     'Muharrem Bostancı': '-',
-    'Milan Škoda': ('st', 2),
+    'Milan Škoda': ('st', 3),
     'Fernando Andrade dos Santos': 'm',
     'Loïc Rémy': ('-', 2),
-    'Braian José Samudio Segovia': '-',
+    'Braian José Samudio Segovia': ('-', 1),
     'Kemal Rüzgar': '-',
 
     # GOZTEPE
@@ -740,5 +740,5 @@ positions = {
     'Moryké Fofana': 'm',
     'Jody Lukoki': '-',
     'Umut Bulut': 'st',
-    'Adem Büyük': ('st', 5),
+    'Adem Büyük': ('st', 6),
 }
