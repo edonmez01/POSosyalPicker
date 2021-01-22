@@ -1,25 +1,25 @@
 teams = {
-    'https://www.mackolik.com/takim/alanyaspor/kadro/84fpe0iynjdghwysyo5tizdkk/s%C3%BCper-lig/2020-2021/': (1, 1),  # Alanya
-    'https://www.mackolik.com/takim/sivasspor/kadro/f432akygffyamal3h6poig65t/s%C3%BCper-lig/2020-2021/': (2, 1),  # Sivas
-    'https://www.mackolik.com/takim/karag%C3%BCmr%C3%BCk/kadro/c3txoz57mu7w9y1jprvnv2flr/s%C3%BCper-lig/2020-2021/': (1, 2),  # Karagumruk
-    'https://www.mackolik.com/takim/gen%C3%A7lerbirli%C4%9Fi/kadro/embqktr41hfzczc8uav1scmcn/s%C3%BCper-lig/2020-2021/': (1, 2),  # Gencler
-    'https://www.mackolik.com/takim/fenerbah%C3%A7e/kadro/8lroq0cbhdxj8124qtxwrhvmm/s%C3%BCper-lig/2020-2021/': (1, 2),  # Fenerbahce
-    'https://www.mackolik.com/takim/denizlispor/kadro/atzw1r6gsxsegd0omo1f0yxkl/s%C3%BCper-lig/2020-2021/': (1, 4),  # Denizli
-    'https://www.mackolik.com/takim/gaziantep-fk/kadro/2agzb2h4ppg7lfz9hn7eg1rqo/s%C3%BCper-lig/2020-2021/': (2, 0),  # Gaziantep
-    'https://www.mackolik.com/takim/be%C5%9Fikta%C5%9F/kadro/2ez9cvam9lp9jyhng3eh3znb4/s%C3%BCper-lig/2020-2021/': (2, 1),  # Besiktas
-    'https://www.mackolik.com/takim/istanbul-ba%C5%9Fak%C5%9Fehir/kadro/47njg6cmlx5q3fvdsupd2n6qu/s%C3%BCper-lig/2020-2021/': (1, 1),  # Basaksehir
-    'https://www.mackolik.com/takim/hatayspor/kadro/efy1nhpn5l6hc27znhsptegba/s%C3%BCper-lig/2020-2021/': (3, 1),  # Hatay
-    'https://www.mackolik.com/takim/%C3%A7aykur-rizespor/kadro/1lbrlj3uu8wi2h9j79snuoae4/s%C3%BCper-lig/2020-2021/': (0, 2),  # Rize
-    'https://www.mackolik.com/takim/g%C3%B6ztepe/kadro/cjbaf8s09qoa1n11r33gc560x/s%C3%BCper-lig/2020-2021/': (2, 1),  # Goztepe
-    'https://www.mackolik.com/takim/mke-ankarag%C3%BCc%C3%BC/kadro/a7jkz1m32wntcvegrwjbr85t5/s%C3%BCper-lig/2020-2021/': (2, 1),  # Ankara
-    'https://www.mackolik.com/takim/konyaspor/kadro/cw4lbdzlqqdvbkdkz00c9ye49/s%C3%BCper-lig/2020-2021/': (1, 3),  # Konya
-    'https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtrbgrg7p5x7bwf/s%C3%BCper-lig/2020-2021/': (1, 2),  # Kasimpasa
+    'https://www.mackolik.com/takim/alanyaspor/kadro/84fpe0iynjdghwysyo5tizdkk/s%C3%BCper-lig/2020-2021/': (None, None),  # Alanya
+    'https://www.mackolik.com/takim/sivasspor/kadro/f432akygffyamal3h6poig65t/s%C3%BCper-lig/2020-2021/': (None, None),  # Sivas
+    'https://www.mackolik.com/takim/karag%C3%BCmr%C3%BCk/kadro/c3txoz57mu7w9y1jprvnv2flr/s%C3%BCper-lig/2020-2021/': (None, None),  # Karagumruk
+    'https://www.mackolik.com/takim/gen%C3%A7lerbirli%C4%9Fi/kadro/embqktr41hfzczc8uav1scmcn/s%C3%BCper-lig/2020-2021/': (None, None),  # Gencler
+    'https://www.mackolik.com/takim/fenerbah%C3%A7e/kadro/8lroq0cbhdxj8124qtxwrhvmm/s%C3%BCper-lig/2020-2021/': (None, None),  # Fenerbahce
+    'https://www.mackolik.com/takim/denizlispor/kadro/atzw1r6gsxsegd0omo1f0yxkl/s%C3%BCper-lig/2020-2021/': (None, None),  # Denizli
+    'https://www.mackolik.com/takim/gaziantep-fk/kadro/2agzb2h4ppg7lfz9hn7eg1rqo/s%C3%BCper-lig/2020-2021/': (None, None),  # Gaziantep
+    'https://www.mackolik.com/takim/be%C5%9Fikta%C5%9F/kadro/2ez9cvam9lp9jyhng3eh3znb4/s%C3%BCper-lig/2020-2021/': (None, None),  # Besiktas
+    'https://www.mackolik.com/takim/istanbul-ba%C5%9Fak%C5%9Fehir/kadro/47njg6cmlx5q3fvdsupd2n6qu/s%C3%BCper-lig/2020-2021/': (None, None),  # Basaksehir
+    'https://www.mackolik.com/takim/hatayspor/kadro/efy1nhpn5l6hc27znhsptegba/s%C3%BCper-lig/2020-2021/': (None, None),  # Hatay
+    'https://www.mackolik.com/takim/%C3%A7aykur-rizespor/kadro/1lbrlj3uu8wi2h9j79snuoae4/s%C3%BCper-lig/2020-2021/': (None, None),  # Rize
+    'https://www.mackolik.com/takim/g%C3%B6ztepe/kadro/cjbaf8s09qoa1n11r33gc560x/s%C3%BCper-lig/2020-2021/': (None, None),  # Goztepe
+    'https://www.mackolik.com/takim/mke-ankarag%C3%BCc%C3%BC/kadro/a7jkz1m32wntcvegrwjbr85t5/s%C3%BCper-lig/2020-2021/': (None, None),  # Ankara
+    'https://www.mackolik.com/takim/konyaspor/kadro/cw4lbdzlqqdvbkdkz00c9ye49/s%C3%BCper-lig/2020-2021/': (None, None),  # Konya
+    'https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtrbgrg7p5x7bwf/s%C3%BCper-lig/2020-2021/': (None, None),  # Kasimpasa
     'https://www.mackolik.com/takim/antalyaspor/kadro/9irsyv431fpuqhqtfq9iwxf2u/s%C3%BCper-lig/2020-2021/': (None, None),  # Antalya
-    'https://www.mackolik.com/takim/trabzonspor/kadro/2yab38jdfl0gk2tei1mq40o06/s%C3%BCper-lig/2020-2021/': (3, 1),  # Trabzon
-    'https://www.mackolik.com/takim/bb-erzurumspor/kadro/ea2gyhkv6vwmxbxevdb4u3796/s%C3%BCper-lig/2020-2021/': (1, 1),  # Erzurum
-    'https://www.mackolik.com/takim/galatasaray/kadro/esa748l653sss1wurz5ps3228/s%C3%BCper-lig/2020-2021/': (4, 1),  # Galatasaray
-    'https://www.mackolik.com/takim/kayserispor/kadro/c8ns6z3u8kxldv1zh1evu10rv/s%C3%BCper-lig/2020-2021/': (1, 1),  # Kayseri
-    'https://www.mackolik.com/takim/yeni-malatyaspor/kadro/du1e3xdbp2q5z7jy31o0vt6t6/s%C3%BCper-lig/2020-2021/': (1, 3)  # Malatya
+    'https://www.mackolik.com/takim/trabzonspor/kadro/2yab38jdfl0gk2tei1mq40o06/s%C3%BCper-lig/2020-2021/': (None, None),  # Trabzon
+    'https://www.mackolik.com/takim/bb-erzurumspor/kadro/ea2gyhkv6vwmxbxevdb4u3796/s%C3%BCper-lig/2020-2021/': (None, None),  # Erzurum
+    'https://www.mackolik.com/takim/galatasaray/kadro/esa748l653sss1wurz5ps3228/s%C3%BCper-lig/2020-2021/': (None, None),  # Galatasaray
+    'https://www.mackolik.com/takim/kayserispor/kadro/c8ns6z3u8kxldv1zh1evu10rv/s%C3%BCper-lig/2020-2021/': (None, None),  # Kayseri
+    'https://www.mackolik.com/takim/yeni-malatyaspor/kadro/du1e3xdbp2q5z7jy31o0vt6t6/s%C3%BCper-lig/2020-2021/': (None, None)  # Malatya
 }
 
 positions = {
