@@ -145,7 +145,7 @@ positions = {
     'Mustafa Çeçenoğlu': '-',
     'Soner Dikmen': 'm',
     'Sefa Yılmaz': 'm',
-    'Robert Ayrton Piris Da Motta': ('m', 3),
+    'Robert Ayrton Piris Da Motta': ('m', 4),
     'Baran Başyiğit': '-',
     'Bogdan Stancu': '-',
     'Giovanni-Guy Yann Sio': 'st',
@@ -396,7 +396,7 @@ positions = {
     'Milan Škoda': ('st', 3),
     'Fernando Andrade dos Santos': 'm',
     'Loïc Rémy': ('-', 2),
-    'Braian José Samudio Segovia': ('m', 1),
+    'Braian José Samudio Segovia': ('m', 2),
     'Kemal Rüzgar': '-',
 
     # GOZTEPE
