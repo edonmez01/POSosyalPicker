@@ -685,6 +685,7 @@ positions = {
     'Mbaye Diagne': ('-', 4),
     'Radamel Falcao García Zárate': ('-', 3),
     'Jesse Tamunobaraboye Sekidika': '-',
+    'Mostafa Mohamed Ahmed Abdallah': ('-', 1),
 
     # KAYSERISPOR
     'Doğan Alemdar': 'gk',
