@@ -52,7 +52,7 @@ positions = {
     'Hasan Ayaroğlu': '-',
     'Davidson da Luz Pereira': 'm',
     'Khouma El Hadji Babacar': ('-', 1),
-    'Adam Fernando Bareiro Gamarra': 'st',
+    'Adam Fernando Bareiro Gamarra': ('st', 1),
     'Mustafa Pektemek': '-',
 
     # SIVASSPOR
@@ -82,7 +82,7 @@ positions = {
     'Yasin Öztekin': '-',
     'Jorge Félix Muñoz García': '-',
     'Olarenwaju Kayode': '-',
-    'Max-Alain Gradel': ('m', 2),
+    'Max-Alain Gradel': ('m', 3),
     'Safa Gundak': '-',
     'Arouna Koné': '-',
     'Mustapha Yatabaré': 'st',
@@ -653,7 +653,7 @@ positions = {
     'Gabriel Obertan': '-',
     'Johanna Ochieng Omolo': 'm',
     'Brahim Darri': '-',
-    'Aatif Chahechouhe': 'm',
+    'Aatif Chahechouhe': ('m', 1),
     'Serdar Yıldırım': '-',
     'Ömer Hasan Şişmanoğlu': '-',
     'Ricardo Jorge Pires Gomes': '-',
