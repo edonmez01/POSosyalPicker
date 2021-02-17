@@ -42,8 +42,6 @@ for team in teams.items():
 
     for x in source:
         player = x.find('a', attrs={'class': 'p0c-team-squad__player-name'}).text.strip()
-        if link == 'https://www.mackolik.com/takim/g%C3%B6ztepe/kadro/cjbaf8s09qoa1n11r33gc560x/s%C3%BCper-lig/2020-2021/' and player == 'Adis Jahović':
-            continue
         # if player in check:
         #     check.remove(player)
         if player == 'Yusuf Erdoğan':  # Because there are 2 different Yusuf Erdogans in the league, the name of the player's team is appended to the string.
