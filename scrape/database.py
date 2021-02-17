@@ -442,7 +442,7 @@ positions = {
     'Fousseni Diabaté': 'm',
     'Obinna Nwobodo': 'm',
     'Anderson Esiti': 'm',
-    'Peter Žulj': '-',
+    'Peter Žulj': ('-', 1),
     'Batuhan Kırdaroğlu': '-',
     'Stefano Napoleoni': '-',
     'Brown Ideye Aide': '-',
@@ -699,7 +699,7 @@ positions = {
     'Ryan Babel': ('-', 1),
     'Mbaye Diagne': ('-', 4),
     'Radamel Falcao García Zárate': ('-', 3),
-    'Mostafa Mohamed Ahmed Abdallah': ('st', 1),
+    'Mostafa Mohamed Ahmed Abdallah': ('st', 2),
 
     # KAYSERISPOR
     'Doğan Alemdar': 'gk',
