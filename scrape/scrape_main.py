@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from scrape import database
+# scrape/database.py includes a list of predicted lineups, updated every week. It is not on Github as it could benefit my rivals.
 
 # Mackolik links and Whoscored Predictions
 teams = database.teams
