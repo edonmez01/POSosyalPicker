@@ -1,6 +1,7 @@
 import pandas as pd
 from scrape import scrape_main
-from formulas import calculate_extra_columns
+import formulas
+# formulas.py contains the mathematical models of the project. It is not on Github as my rivals could benefit from it.
 
 # Set parameters for console display
 pd.set_option('display.max_columns', 25)
@@ -16,51 +17,13 @@ st_data = pd.DataFrame.from_dict(scrape_main.st_data, orient='index', columns=da
 
 # Calculate extra columns
 for df in (gk_data, d_data, m_data, st_data):
-    calculate_extra_columns(df)  # The file that contains this function isn't on Github as my rivals could benefit from it.
+    formulas.calculate_extra_columns(df)
 
-# GK #######################################
-# 10 pts per goal
-gk_data['pts_final'] += 10 * (((gk_data['Goals'] - gk_data['PenaltyGoals']) / gk_data['matches']) * gk_data['goal_multiplier'] + 1.3 * gk_data['PenaltyGoals'] / gk_data['matches'])
-
-# 8 pts per assist
-gk_data['pts_final'] += 8 * (gk_data['Assists'] / gk_data['matches']) * gk_data['goal_multiplier']
-
-# -1 point per goal conceded
-gk_data['pts_final'] -= gk_data['CPrediction']
-
-# 5 pts for clean sheet
-gk_data['pts_final'] += 5 * gk_data['clean_sheet_prob']
-
-
-# D #########################################
-# 8 pts per goal
-d_data['pts_final'] += 8 * (((d_data['Goals'] - d_data['PenaltyGoals']) / d_data['matches']) * d_data['goal_multiplier'] + 1.3 * d_data['PenaltyGoals'] / d_data['matches'])
-
-# 4 pts per assist
-d_data['pts_final'] += 4 * (d_data['Assists'] / d_data['matches']) * d_data['goal_multiplier']
-
-# -0.5 pts per goal conceded
-d_data['pts_final'] -= d_data['CPrediction'] / 2
-
-# 3 pts for clean sheet
-d_data['pts_final'] += 3 * d_data['clean_sheet_prob']
-
-
-# M #########################################
-# 6 pts per goal
-m_data['pts_final'] += 6 * (((m_data['Goals'] - m_data['PenaltyGoals']) / m_data['matches']) * m_data['goal_multiplier'] + 1.3 * m_data['PenaltyGoals'] / m_data['matches'])
-
-# 3 pts per assist
-m_data['pts_final'] += 3 * (m_data['Assists'] / m_data['matches']) * m_data['goal_multiplier']
-
-
-# ST ##########################################
-# 5 pts per goal
-st_data['pts_final'] += 5 * (((st_data['Goals'] - st_data['PenaltyGoals']) / st_data['matches']) * st_data['goal_multiplier'] + 1.3 * st_data['PenaltyGoals'] / st_data['matches'])
-
-# 3 pts per assist
-st_data['pts_final'] += 3 * (st_data['Assists'] / st_data['matches']) * st_data['goal_multiplier']
-
+# Calculate final points for players in each position
+formulas.calculate_gk_points(gk_data)
+formulas.calculate_d_points(d_data)
+formulas.calculate_m_points(m_data)
+formulas.calculate_st_points(st_data)
 
 # FINALIZATION #################################
 # Concatenate the dataframes
