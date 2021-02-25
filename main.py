@@ -16,7 +16,7 @@ st_data = pd.DataFrame.from_dict(scrape_main.st_data, orient='index', columns=da
 
 # Calculate extra columns
 for df in (gk_data, d_data, m_data, st_data):
-    calculate_extra_columns(df)
+    calculate_extra_columns(df)  # The file that contains this function isn't on Github as my rivals could benefit from it.
 
 # GK #######################################
 # 10 pts per goal
