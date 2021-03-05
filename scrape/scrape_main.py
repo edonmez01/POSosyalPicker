@@ -90,6 +90,12 @@ for team in teams.items():
         yellow = x.find('td', attrs={'class': 'p0c-team-squad__cell-player p0c-team-squad__cell-player--yellow-cards'}).text.strip()
         red = x.find('td', attrs={'class': 'p0c-team-squad__cell-player p0c-team-squad__cell-player--red-cards'}).text.strip()
 
+        # Mackolik is inconsistent with the stats of players that are transferred from one Super Lig team to another,
+        # and therefore sometimes situations occur where a player has more penalty goals than total goals (because
+        # total goals are reset to zero whereas penalty goals aren't).
+        if penaltyGoals > goals:
+            print(f'{player}: Penalty stats error')
+
         data[player] = []
 
         for i in (mins, goals, penaltyGoals, assists, yellow, red, sp, cp):
