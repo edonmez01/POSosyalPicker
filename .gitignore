@@ -2,8 +2,9 @@ draft.txt
 formulas.py
 database.py
 
-# This contains the standings of a league I am part of, it doesn't need to be on Github:
+# These contain data about a league I am part of, they don't need to be on Github:
 league_table.xlsx
+cs_prob.xlsx
 
 venv/
 .idea/
