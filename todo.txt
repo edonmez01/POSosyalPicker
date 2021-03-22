@@ -1,3 +1,8 @@
+WEEKLY:
+-Update league table
+-Update penalty stats
+-Update cs_prob.xlsx and cs formula
+
 PROBLEMS:
 
 IMPROVEMENT:
