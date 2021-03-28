@@ -1,7 +1,8 @@
 WEEKLY:
 -Update league table
 -Update penalty stats
--Update cs_prob.xlsx and cs formula
+-Update other_stats.xlsx and formulas accordingly
+-Update predicted lineups
 
 PROBLEMS:
 

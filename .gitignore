@@ -4,7 +4,7 @@ database.py
 
 # These contain data about a league I am part of, they don't need to be on Github:
 league_table.xlsx
-cs_prob.xlsx
+other_stats.xlsx
 
 venv/
 .idea/

@@ -26,30 +26,38 @@ formulas.calculate_m_points(m_data)
 formulas.calculate_st_points(st_data)
 
 # FINALIZATION #################################
-# Concatenate the dataframes
-final_results = pd.concat((gk_data, d_data, m_data, st_data))
+# Concatenate the m and st dataframes
+m_st_data = pd.concat((m_data, st_data))
 
-# Sort by final_results
-final_results = final_results.sort_values(['pts_final'], ascending=False)
+html_renders = []
 
-# Add pg rows for analysis
-for col in ('Goals', 'PenaltyGoals', 'Assists', 'Yellow', 'Red'):
-    if col == 'Goals':
-        final_results[col + '_pg'] = (final_results[col] - final_results['PenaltyGoals']) / final_results['matches']
-    else:
-        final_results[col + '_pg'] = final_results[col] / final_results['matches']
+for df in (gk_data, d_data, m_st_data):
+    # Sort by final_results
+    df = df.sort_values(['pts_final'], ascending=False)
 
-# Push final_results column to the back
-column_list = final_results.columns.tolist()
-temp = column_list.pop(8)
-column_list.append(temp)
-final_results = final_results[column_list]
+    # Add pg rows for analysis
+    for col in ('Goals', 'PenaltyGoals', 'Assists', 'Yellow', 'Red'):
+        if col == 'Goals':
+            df[col + '_pg'] = (df[col] - df['PenaltyGoals']) / df['matches']
+        else:
+            df[col + '_pg'] = df[col] / df['matches']
 
-# Apply background_gradient and render html table
-gradient_columns = ['Goals_pg', 'PenaltyGoals_pg', 'Assists_pg', 'Yellow_pg', 'Red_pg', 'SPrediction', 'CPrediction', 'pts_final']
-html_render = final_results.style.background_gradient(subset=gradient_columns).render()
+    # Push final_results column to the back
+    column_list = df.columns.tolist()
+    temp = column_list.pop(8)
+    column_list.append(temp)
+    df = df[column_list]
+
+    # Apply background_gradient and render html table
+    gradient_columns = ['Goals_pg', 'PenaltyGoals_pg', 'Assists_pg', 'Yellow_pg', 'Red_pg', 'SPrediction', 'CPrediction', 'pts_final']
+    html_renders.append(df.style.background_gradient(subset=gradient_columns).render())
 
 # Output to html file
 with open('out.html', 'w', encoding='utf-8') as out:
     out.write("<head><meta charset='UTF-8'></head>")
-    out.write(html_render)
+    out.write("<h1>GOALKEEPERS</h1>")
+    out.write(html_renders[0])
+    out.write("<h1>DEFENDERS</h1>")
+    out.write(html_renders[1])
+    out.write("<h1>MIDFIELDERS & STRIKERS</h1>")
+    out.write(html_renders[2])
