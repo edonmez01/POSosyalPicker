@@ -26,12 +26,13 @@ formulas.calculate_m_points(m_data)
 formulas.calculate_st_points(st_data)
 
 # FINALIZATION #################################
-# Concatenate the m and st dataframes
+# Concatenate the m and st dataframes, and create another dataframe that contains all players
 m_st_data = pd.concat((m_data, st_data))
+all_data = pd.concat((gk_data, d_data, m_data, st_data))
 
 html_renders = []
 
-for df in (gk_data, d_data, m_st_data):
+for df in (gk_data, d_data, m_st_data, all_data):
     # Sort by final_results
     df = df.sort_values(['pts_final'], ascending=False)
 
@@ -48,7 +49,7 @@ for df in (gk_data, d_data, m_st_data):
     column_list.append(temp)
     df = df[column_list]
 
-    # Apply background_gradient and render html table
+    # Apply background_gradient and render html tables
     gradient_columns = ['Goals_pg', 'PenaltyGoals_pg', 'Assists_pg', 'Yellow_pg', 'Red_pg', 'SPrediction', 'CPrediction', 'pts_final']
     html_renders.append(df.style.background_gradient(subset=gradient_columns).render())
 
@@ -61,3 +62,5 @@ with open('out.html', 'w', encoding='utf-8') as out:
     out.write(html_renders[1])
     out.write("<h1>MIDFIELDERS & STRIKERS</h1>")
     out.write(html_renders[2])
+    out.write("<h1>ALL PLAYERS</h1>")
+    out.write(html_renders[3])
