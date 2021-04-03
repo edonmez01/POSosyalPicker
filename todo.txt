@@ -1,8 +1,8 @@
 WEEKLY:
--Update league table
--Update penalty stats
--Update other_stats.xlsx and formulas accordingly
--Update predicted lineups
+-Update league table                                done for GW32
+-Update penalty stats                               done for GW32
+-Update other_stats.xlsx and formulas accordingly   done for GW32
+-Update predicted lineups                           done for GW32
 
 PROBLEMS:
 
