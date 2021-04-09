@@ -9,7 +9,7 @@ pd.set_option('display.max_rows', 500)
 pd.set_option('display.width', 1000)
 
 # Initialize dataframes
-data_cols = ['Mins', 'Goals', 'PenaltyGoals', 'Assists', 'Yellow', 'Red', 'SPrediction', 'CPrediction']
+data_cols = ['Apps', 'Mins', 'Goals', 'PenaltyGoals', 'Assists', 'Yellow', 'Red', 'SPrediction', 'CPrediction']
 gk_data = pd.DataFrame.from_dict(scrape_main.gk_data, orient='index', columns=data_cols)
 d_data = pd.DataFrame.from_dict(scrape_main.d_data, orient='index', columns=data_cols)
 m_data = pd.DataFrame.from_dict(scrape_main.m_data, orient='index', columns=data_cols)
@@ -45,12 +45,19 @@ for df in (gk_data, d_data, m_st_data, all_data):
 
     # Push final_results column to the back
     column_list = df.columns.tolist()
-    temp = column_list.pop(8)
+    temp = column_list.pop(9)  # The argument here is the index of the pts_final column.
     column_list.append(temp)
     df = df[column_list]
 
-    # Apply background_gradient and render html tables
-    gradient_columns = ['Goals_pg', 'PenaltyGoals_pg', 'Assists_pg', 'Yellow_pg', 'Red_pg', 'SPrediction', 'CPrediction', 'pts_final']
+    # Drop unneeded columns from the dataframe to save some space in the final html file.
+    df = df.drop(['realSPrediction', 'realCPrediction'], axis='columns')
+
+    # Rename some columns to save some space in the final html file.
+    df = df.rename({'SPrediction': 'SP', 'CPrediction': 'CP', 'clean_sheet_prob': 'CS_prob', 'Goals_pg': 'Non-P_goals_pg'}, axis='columns')
+
+    # Apply background_gradient to needed columns and render html tables
+    gradient_columns = ['mins_per_app', 'CS_prob', 'win_prob', 'goal_multiplier', 'assist_multiplier', 'Non-P_goals_pg',
+                        'PenaltyGoals_pg', 'Assists_pg', 'Yellow_pg', 'Red_pg', 'pts_final']
     html_renders.append(df.style.background_gradient(subset=gradient_columns).render())
 
 # Output to html file

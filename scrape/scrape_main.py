@@ -8,14 +8,6 @@ teams = database.teams
 
 # Position data from POSosyal directly
 positions = database.positions
-# check = []
-# for i in positions:
-#     if isinstance(positions[i], str):
-#         if positions[i] in ('gk', 'd', 'm', 'st'):
-#             check.append(i)
-#     else:
-#         if positions[i][0] in ('gk', 'd', 'm', 'st'):
-#             check.append(i)
 
 gk_data = {}
 d_data = {}
@@ -30,7 +22,10 @@ if teams['https://www.mackolik.com/takim/karag%C3%BCmr%C3%BCk/kadro/c3txoz57mu7w
 if teams['https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtrbgrg7p5x7bwf/s%C3%BCper-lig/2020-2021/'] == (None, None):
     kasimpasaBye = True
 
+# This variable is either ' KARAGUMRUK' or ' KASIMPASA'. We need it to check which one ofthe Yusuf Erdogans in the
+# league we are dealing with.
 yusuferdogan = ' KARAGUMRUK'
+
 for team in teams.items():
     teamCount = 0
     link = team[0]
@@ -43,9 +38,10 @@ for team in teams.items():
 
     for x in source:
         player = x.find('a', attrs={'class': 'p0c-team-squad__player-name'}).text.strip()
-        # if player in check:
-        #     check.remove(player)
-        if player == 'Yusuf Erdoğan':  # Because there are 2 different Yusuf Erdogans in the league, the name of the player's team is appended to the string.
+
+        # Because there are 2 different Yusuf Erdogans in the league, the name of the player's team is appended to the
+        # string.
+        if player == 'Yusuf Erdoğan':
             if karagumrukBye and kasimpasaBye:
                 print('Yusuf Erdogan error')
                 continue
@@ -57,7 +53,9 @@ for team in teams.items():
                 player += yusuferdogan
                 yusuferdogan = ' KASIMPASA'
 
-        try:  # Some youth players seem to exist on the Mackolik source code but not in the real site. This is not a big deal as these players don't play in the league anyway.
+        # Some youth players seem to exist on the Mackolik source code but not in the real site. This is not a big deal
+        # as these players don't play in the league anyway.
+        try:
             temp = positions[player]
             if isinstance(temp, str):
                 pos = positions[player]
@@ -66,7 +64,6 @@ for team in teams.items():
                 pos, penaltyGoals = positions[player]
 
         except KeyError:
-            # print('Player not found: ' + player)
             continue
 
         if pos == '-':  # If the player isn't in the predicted lineup
@@ -84,6 +81,7 @@ for team in teams.items():
             print(f'{player}: Position error')
             continue
 
+        apps = x.find('td', attrs={'class': 'p0c-team-squad__cell-player p0c-team-squad__cell-player--appearances'}).text.strip()
         mins = x.find('td', attrs={'class': 'p0c-team-squad__cell-player p0c-team-squad__cell-player--time-played'}).text.strip()
         goals = x.find('td', attrs={'class': 'p0c-team-squad__cell-player p0c-team-squad__cell-player--goals'}).text.strip()
         assists = x.find('td', attrs={'class': 'p0c-team-squad__cell-player p0c-team-squad__cell-player--assists'}).text.strip()
@@ -98,7 +96,7 @@ for team in teams.items():
 
         data[player] = []
 
-        for i in (mins, goals, penaltyGoals, assists, yellow, red, sp, cp):
+        for i in (apps, mins, goals, penaltyGoals, assists, yellow, red, sp, cp):
             if i == '-':
                 data[player].append(0)
             else:
