@@ -1,8 +1,8 @@
 WEEKLY:
--Update league table                                done for GW34
--Update penalty stats                               done for GW34
--Update other_stats.xlsx and formulas accordingly   done for GW34
--Update predicted lineups                           done for GW34
+-Update league table                                done for GW35
+-Update penalty stats                               done for GW35
+-Update other_stats.xlsx and formulas accordingly   done for GW35
+-Update predicted lineups                           done for GW35
 
 PROBLEMS:
 
