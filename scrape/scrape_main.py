@@ -22,7 +22,7 @@ if teams['https://www.mackolik.com/takim/karag%C3%BCmr%C3%BCk/kadro/c3txoz57mu7w
 if teams['https://www.mackolik.com/takim/kas%C4%B1mpa%C5%9Fa/kadro/4idg23egrrvtrbgrg7p5x7bwf/s%C3%BCper-lig/2020-2021/'] == (None, None):
     kasimpasaBye = True
 
-# This variable is either ' KARAGUMRUK' or ' KASIMPASA'. We need it to check which one ofthe Yusuf Erdogans in the
+# This variable is either ' KARAGUMRUK' or ' KASIMPASA'. We need it to check which one of the Yusuf Erdogans in the
 # league we are dealing with.
 yusuferdogan = ' KARAGUMRUK'
 

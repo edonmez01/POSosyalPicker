@@ -1,10 +1,11 @@
 WEEKLY:
--Update league table                                done for GW37
--Update penalty stats                               done for GW37
--Update other_stats.xlsx and formulas accordingly   done for GW37
+-Update league table                                done for GW38
+-Update penalty stats                               done for GW38
+-Update other_stats.xlsx and formulas accordingly   done for GW38
 -Update predicted lineups                           done for GW37
 
 PROBLEMS:
 
 IMPROVEMENT:
+- run a linear regression over minutes played per match - this will probably be done in summer
 - try to make the html table more fabulous?
